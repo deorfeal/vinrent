@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Cars
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Services
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <div class="header__lang lang">
+                    <ul class="lang__list">
+                        <li class="lang__list-item lang__list-item--active">
+                            <a class="lang__list-link" href="#">
+                                En
+                            </a>
+                        </li>
+                        <li class="lang__list-item">
+                            <a class="lang__list-link" href="#">
+                                Ру
+                            </a>
+                        </li>
+                        <li class="lang__list-item">
+                            <a class="lang__list-link" href="#">
+                                Vi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="header__login login" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+                            fill="#EA3C12" />
+                        <path
+                            d="M10 6C8.344 6 7 7.34579 7 9.004C7 10.6302 8.272 11.9519 9.96 12C9.984 12 10.016 12 10.032 12C10.048 12 10.072 12 10.088 12C10.096 12 10.104 12 10.104 12C11.72 11.9439 12.992 10.6302 13 9.004C13 7.34579 11.656 6 10 6Z"
+                            fill="#EA3C12" />
+                        <path
+                            d="M15 15.9281C13.6873 17.2103 11.9322 18 10 18C8.06785 18 6.31268 17.2103 5 15.9281C5.17699 15.2166 5.65634 14.5676 6.35693 14.0672C8.37021 12.6443 11.6445 12.6443 13.6431 14.0672C14.351 14.5676 14.823 15.2166 15 15.9281Z"
+                            fill="#EA3C12" />
+                    </svg>
+                    <span>
+                        Login
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading heading" style="background-image: url(images/heading-bg.png);">
+                <div class="container">
+                    <div class="heading__inner">
+                        <div class="heading__body heading-body">
+                            <h1 class="heading-body__title">
+                                Rent Youre Dream Ride
+                            </h1>
+                            <p class="heading-body__text">
+                                Easy, Fast, and Reliable Car Rentals
+                            </p>
+                            <div class="heading-body__bottom">
+                                <a class="heading-body__bottom-link btn" href="#">
+                                    make a order
+                                </a>
+                            </div>
+                        </div>
+                        <div class="heading__img">
+                            <img class="heading__img-image" src="images/heading-img-1.png" alt="img">
+                        </div>
+                    </div>
+                    <form class="heading__rent rent" action="#">
+                        <div class="rent__radios rent-tubs">
+                            <label class="rent-tubs__checkbox rent-tubs__checkbox--active container">
+                                Car
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="rent-tubs__checkbox container">
+                                Vans & Trucks
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="rent-tubs__checkbox container">
+                                Prestige
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="rent__inner">
+                            <div class="rent__box rent-box">
+                                <label class="rent-box__label" for="">
+                                    Pick up location
+                                </label>
+                                <div class="rent-box__custom-select custom-select">
+                                    <select>
+                                        <option value="0">Ukraine, Dnipropetrovskaya</option>
+                                        <option value="1">Kharkiv</option>
+                                        <option value="2">Sumy</option>
+                                        <option value="3">Dnipro</option>
+                                        <option value="4">Kyiv</option>
+                                        <option value="5">Chernivtsi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="rent__box rent-box">
+                                <label class="rent-box__label" for="">
+                                    Return location
+                                </label>
+                                <div class="rent-box__custom-select custom-select">
+                                    <select>
+                                        <option value="0">Airport, city or adress</option>
+                                        <option value="1">Kharkiv</option>
+                                        <option value="2">Sumy</option>
+                                        <option value="3">Dnipro</option>
+                                        <option value="4">Kyiv</option>
+                                        <option value="5">Chernivtsi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="rent__box rent-box">
+                                <label class="rent-box__label" for="">
+                                    Pick-up date
+                                </label>
+                                <div class="rent-box__datapicker">
+                                    <input class="rent-box__datapicker-input" type="text" id="datetimepicker" value="Jul 29 | 4:20 pm">
+                                </div>
+                            </div>
+                            <div class="rent__box rent-box">
+                                <label class="rent-box__label" for="">
+                                    Return date
+                                </label>
+                                <div class="rent-box__datapicker">
+                                    <input class="rent-box__datapicker-input" type="text" id="datetimepicker" value="Jul 29 | 4:20 pm">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent__bottom rent-bottom">
+                            <label class="rent-bottom__ckeckbox container">
+                                Apply corporate rate & have a negoriated rate
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <a class="rent-bottom__link btn" href="#">
+                                show cars
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="main__discover discover">
+                <div class="container">
+                    <h2 class="discover__title title">
+                        Discover
+                        <span>
+                            Vinret
+                        </span>
+                        's car rental fleet
+                    </h2>
+                    <p class="discover__text">
+                        Introducing our impressive fleet:
+                        <span>
+                            find your perfect vehicle today
+                        </span>
+                    </p>
+                    <div class="discover__categories categories">
+                        <div class="categories__swiper categories-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="categories-swiper__slide categories-swiper-slide swiper-slide">
+                                    <button class="categories-swiper-slide__button" type="button" id="0">
+                                        All
+                                    </button>
+                                </div>
+                                <div class="categories-swiper__slide categories-swiper-slide swiper-slide">
+                                    <button class="categories-swiper-slide__button" type="button" id="1">
+                                        Vans & Trucks
+                                    </button>
+                                </div>
+                                <div class="categories-swiper__slide categories-swiper-slide swiper-slide">
+                                    <button class="categories-swiper-slide__button" type="button" id="2">
+                                        Electric
+                                    </button>
+                                </div>
+                                <div class="categories-swiper__slide categories-swiper-slide swiper-slide">
+                                    <button class="categories-swiper-slide__button" type="button" id="3">
+                                        Sports
+                                    </button>
+                                </div>
+                                <div class="categories-swiper__slide categories-swiper-slide swiper-slide">
+                                    <button class="categories-swiper-slide__button" type="button" id="4">
+                                        SUVs
+                                    </button>
+                                </div>
+                                <div class="categories-swiper__slide categories-swiper-slide swiper-slide">
+                                    <button class="categories-swiper-slide__button" type="button" id="5"> 
+                                        Four wheel
+                                    </button>
+                                </div>
+                                <div class="categories-swiper__slide categories-swiper-slide swiper-slide">
+                                    <button class="categories-swiper-slide__button" type="button" id="6">
+                                        Prestige
+                                    </button>
+                                </div>
+                                <div class="categories-swiper__slide categories-swiper-slide swiper-slide">
+                                    <button class="categories-swiper-slide__button" type="button" id="7">
+                                        Diesel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories__button-next swiper-btn-next">
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 8L0 0L16 0L8 8Z" fill="#EA3C12" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="discover__wrapper discover__wrapper--active" id="0">
+                        <div class="discover__cards-swiper cards-swiper cars-swiper swiper" >
+                            <div class="swiper-wrapper">
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-1.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Prestige
+                                            </p>
+                                            <h3 class="card__title">
+                                                BMW 8 series Convertible
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-2.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                ECONOMY
+                                            </p>
+                                            <h3 class="card__title">
+                                                Compact (Nissan Versa)
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Four wheel
+                                            </p>
+                                            <h3 class="card__title">
+                                                Chevrolet Suburban
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                electric
+                                            </p>
+                                            <h3 class="card__title">
+                                                Tesla X
+                                            </h3>
+                                            <p class="card__price">
+                                                60 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__wrapper" id="1">
+                        <div class="discover__cards-swiper cards-swiper cars-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-1.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Prestige
+                                            </p>
+                                            <h3 class="card__title">
+                                                BMW 8 series Convertible
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                ECONOMY
+                                            </p>
+                                            <h3 class="card__title">
+                                                Compact (Nissan Versa)
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Four wheel
+                                            </p>
+                                            <h3 class="card__title">
+                                                Chevrolet Suburban
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                electric
+                                            </p>
+                                            <h3 class="card__title">
+                                                Tesla X
+                                            </h3>
+                                            <p class="card__price">
+                                                60 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__wrapper" id="2">
+                        <div class="discover__cards-swiper cards-swiper cars-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-2.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Prestige
+                                            </p>
+                                            <h3 class="card__title">
+                                                BMW 8 series Convertible
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-2.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                ECONOMY
+                                            </p>
+                                            <h3 class="card__title">
+                                                Compact (Nissan Versa)
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Four wheel
+                                            </p>
+                                            <h3 class="card__title">
+                                                Chevrolet Suburban
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                electric
+                                            </p>
+                                            <h3 class="card__title">
+                                                Tesla X
+                                            </h3>
+                                            <p class="card__price">
+                                                60 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__wrapper" id="3">
+                        <div class="discover__cards-swiper cards-swiper cars-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Prestige
+                                            </p>
+                                            <h3 class="card__title">
+                                                BMW 8 series Convertible
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-2.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                ECONOMY
+                                            </p>
+                                            <h3 class="card__title">
+                                                Compact (Nissan Versa)
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Four wheel
+                                            </p>
+                                            <h3 class="card__title">
+                                                Chevrolet Suburban
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                electric
+                                            </p>
+                                            <h3 class="card__title">
+                                                Tesla X
+                                            </h3>
+                                            <p class="card__price">
+                                                60 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__wrapper" id="4">
+                        <div class="discover__cards-swiper cards-swiper cars-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Prestige
+                                            </p>
+                                            <h3 class="card__title">
+                                                BMW 8 series Convertible
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-2.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                ECONOMY
+                                            </p>
+                                            <h3 class="card__title">
+                                                Compact (Nissan Versa)
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Four wheel
+                                            </p>
+                                            <h3 class="card__title">
+                                                Chevrolet Suburban
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                electric
+                                            </p>
+                                            <h3 class="card__title">
+                                                Tesla X
+                                            </h3>
+                                            <p class="card__price">
+                                                60 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__wrapper" id="5">
+                        <div class="discover__cards-swiper cards-swiper cars-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-1.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Prestige
+                                            </p>
+                                            <h3 class="card__title">
+                                                BMW 8 series Convertible
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-2.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                ECONOMY
+                                            </p>
+                                            <h3 class="card__title">
+                                                Compact (Nissan Versa)
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Four wheel
+                                            </p>
+                                            <h3 class="card__title">
+                                                Chevrolet Suburban
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                electric
+                                            </p>
+                                            <h3 class="card__title">
+                                                Tesla X
+                                            </h3>
+                                            <p class="card__price">
+                                                60 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__wrapper" id="6">
+                        <div class="discover__cards-swiper cards-swiper cars-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-1.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Prestige
+                                            </p>
+                                            <h3 class="card__title">
+                                                BMW 8 series Convertible
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-1.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                ECONOMY
+                                            </p>
+                                            <h3 class="card__title">
+                                                Compact (Nissan Versa)
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Four wheel
+                                            </p>
+                                            <h3 class="card__title">
+                                                Chevrolet Suburban
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-4.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                electric
+                                            </p>
+                                            <h3 class="card__title">
+                                                Tesla X
+                                            </h3>
+                                            <p class="card__price">
+                                                60 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discover__wrapper" id="7">
+                        <div class="discover__cards-swiper cards-swiper cars-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-1.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Prestige
+                                            </p>
+                                            <h3 class="card__title">
+                                                BMW 8 series Convertible
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-2.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                ECONOMY
+                                            </p>
+                                            <h3 class="card__title">
+                                                Compact (Nissan Versa)
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-3.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                Four wheel
+                                            </p>
+                                            <h3 class="card__title">
+                                                Chevrolet Suburban
+                                            </h3>
+                                            <p class="card__price">
+                                                30 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards-swiper__slide cards-swiper-slide swiper-slide">
+                                    <a class="cards-swiper-slide__card card" href="#">
+                                        <div class="card__poster">
+                                            <img class="card__poster-img" src="images/card-img-2.png" alt="img">
+                                        </div>
+                                        <div class="card__innner">
+                                            <p class="card__suptext">
+                                                electric
+                                            </p>
+                                            <h3 class="card__title">
+                                                Tesla X
+                                            </h3>
+                                            <p class="card__price">
+                                                60 €/h
+                                            </p>
+                                            <div class="card__info">
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-1.png" alt="icon">
+                                                    <span>
+                                                        5 seats
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-2.png" alt="icon">
+                                                    <span>
+                                                        4 doors
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-3.png" alt="icon">
+                                                    <span>
+                                                        Automatic
+                                                    </span>
+                                                </div>
+                                                <div class="card__info-text">
+                                                    <img src="images/card-info-icon-4.png" alt="icon">
+                                                    <span>
+                                                        A/C
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__offers offers">
+                <div class="container">
+                    <div class="offers__inner">
+                        <div class="offers__item offers-item">
+                            <div class="offers-item__heading">
+                                <h2 class="offers-item__heading-title title ">
+                                    Vinret
+                                    <span>
+                                        TOP offers
+                                    </span>
+                                </h2>
+                                <p class="offers-item__heading-text">
+                                    With our extensive fleet of vehicles, impeccable customer service, and competitive
+                                    rates, we ensure you have a seamless and enjoyable journey wherever your adventures
+                                    take you.
+                                </p>
+                                <a class="offers-item__heading-link btn" href="#">
+                                    TO ALL OFFERS
+                                </a>
+                            </div>
+                        </div>
+                        <a class="offers__item offers-item" href="#">
+                            <img class="offers-item__img" src="images/offers-img-1.jpg" alt="img">
+                            <h3 class="offers-item__title">
+                                Vans for you life
+                            </h3>
+                            <div class="offers-item__box">
+                                <p class="offers-item__box-text">
+                                    up to
+                                </p>
+                                <p class="offers-item__box-digits">
+                                    -10%
+                                </p>
+                                <p class="offers-item__box-text">
+                                    off
+                                </p>
+                            </div>
+                        </a>
+                        <a class="offers__item offers-item" href="#">
+                            <img class="offers-item__img" src="images/offers-img-2.jpg" alt="img">
+                            <h3 class="offers-item__title">
+                                Premium cars
+                            </h3>
+                            <div class="offers-item__box">
+                                <p class="offers-item__box-text">
+                                    up to
+                                </p>
+                                <p class="offers-item__box-digits">
+                                    -10%
+                                </p>
+                                <p class="offers-item__box-text">
+                                    off
+                                </p>
+                            </div>
+                        </a>
+                        <a class="offers__item offers-item" href="#">
+                            <img class="offers-item__img" src="images/offers-img-3.jpg" alt="img">
+                            <h3 class="offers-item__title">
+                                Explore Vietnam
+                            </h3>
+                            <div class="offers-item__box">
+                                <p class="offers-item__box-text">
+                                    get
+                                </p>
+                                <p class="offers-item__box-digits">
+                                    88%
+                                </p>
+                                <p class="offers-item__box-text">
+                                    free
+                                </p>
+                            </div>
+                        </a>
+                        <a class="offers__item offers-item" href="#">
+                            <img class="offers-item__img" src="images/offers-img-4.jpg" alt="img">
+                            <h3 class="offers-item__title">
+                                Business long term
+                            </h3>
+                            <div class="offers-item__box">
+                                <p class="offers-item__box-text">
+                                    GET
+                                </p>
+                                <p class="offers-item__box-digits">
+                                    -77%
+                                </p>
+                                <p class="offers-item__box-text">
+                                    off
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="offers__link btn" href="#">
+                        offers
+                    </a>
+                </div>
+            </section>
+            <section class="main__advantages advantages">
+                <div class="container">
+                    <div class="advantages__inner">
+                        <div class="advantages__item advantages-item">
+                            <div class="advantages-item__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.2794 18.7202V17.2402C13.2794 16.6669 12.8528 16.3869 12.3328 16.6136L5.65276 19.4936C4.59943 19.9469 3.74609 19.3869 3.74609 18.2536V16.4936C3.74609 15.5869 4.42609 14.5336 5.26609 14.1869L12.8661 10.9202C13.0794 10.8136 13.2661 10.5336 13.2661 10.2936V6.21357C13.2661 4.93357 14.2128 3.40024 15.3461 2.81357C15.7461 2.61357 16.2261 2.61357 16.6261 2.81357C17.7728 3.40024 18.7194 4.92024 18.7194 6.20024V10.2802C18.7194 10.5202 18.9061 10.8002 19.1194 10.9069L20.5061 11.4936L13.2794 18.7202Z"
+                                        fill="#EA3C12" />
+                                    <path opacity="0.4"
+                                        d="M28.2532 16.4932V18.2532C28.2532 19.3865 27.3999 19.9465 26.3466 19.4932L19.6666 16.6132C19.1332 16.3998 18.7199 16.6665 18.7199 17.2398V21.1198C18.7199 21.4265 18.8932 21.8665 19.1199 22.0798L22.2132 25.1865C22.5332 25.5065 22.6799 26.1465 22.5332 26.5865L21.9332 28.3998C21.6666 29.1865 20.7732 29.5465 20.0399 29.1865L16.8666 26.5198C16.3866 26.1065 15.5999 26.1065 15.1199 26.5198L11.9466 29.1865C11.2132 29.5598 10.3199 29.1865 10.0799 28.3998L9.47989 26.5865C9.33322 26.1332 9.47989 25.5065 9.79989 25.1865L12.8932 22.0798C13.1066 21.8665 13.2799 21.4265 13.2799 21.1198V18.7198L20.5066 11.4932L26.7332 14.1732C27.5732 14.5332 28.2532 15.5865 28.2532 16.4932Z"
+                                        fill="#EA3C12" />
+                                </svg>
+                            </div>
+                            <h3 class="advantages-item__title">
+                                AIRPORT SHUTTLE
+                            </h3>
+                            <p class="advantages-item__text">
+                                Convenient
+                                <span>
+                                    airport shuttle service
+                                </span>
+                                for seamless car rental
+                            </p>
+                            <a class="advantages-item__link btn" href="#">
+                                BOOKING NOW
+                            </a>
+                        </div>
+                        <div class="advantages__item advantages-item">
+                            <div class="advantages-item__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4"
+                                        d="M25.3337 11.9998C25.3337 13.9332 24.7603 15.7065 23.7737 17.1865C22.3337 19.3199 20.0537 20.8265 17.4003 21.2132C16.947 21.2932 16.4803 21.3332 16.0003 21.3332C15.5203 21.3332 15.0537 21.2932 14.6003 21.2132C11.947 20.8265 9.66699 19.3199 8.22699 17.1865C7.24033 15.7065 6.66699 13.9332 6.66699 11.9998C6.66699 6.83984 10.8403 2.6665 16.0003 2.6665C21.1603 2.6665 25.3337 6.83984 25.3337 11.9998Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M28.3338 24.6264L26.1338 25.1464C25.6404 25.2664 25.2538 25.6397 25.1471 26.1331L24.6804 28.0931C24.4271 29.1597 23.0671 29.4797 22.3604 28.6397L16.0004 21.333L9.64043 28.653C8.93376 29.493 7.57376 29.173 7.32043 28.1064L6.85376 26.1464C6.73376 25.653 6.3471 25.2664 5.8671 25.1597L3.6671 24.6397C2.65376 24.3997 2.29376 23.133 3.0271 22.3997L8.2271 17.1997C9.6671 19.333 11.9471 20.8397 14.6004 21.2264C15.0538 21.3064 15.5204 21.3464 16.0004 21.3464C16.4804 21.3464 16.9471 21.3064 17.4004 21.2264C20.0538 20.8397 22.3338 19.333 23.7738 17.1997L28.9738 22.3997C29.7071 23.1197 29.3471 24.3864 28.3338 24.6264Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M16.7736 7.97301L17.5603 9.54633C17.667 9.75966 17.947 9.97301 18.2003 10.013L19.627 10.253C20.5336 10.3997 20.747 11.0663 20.0936 11.7197L18.987 12.8263C18.8003 13.013 18.6936 13.373 18.7603 13.6397L19.0803 15.013C19.3336 16.093 18.7603 16.5196 17.8003 15.9463L16.467 15.1597C16.227 15.013 15.827 15.013 15.587 15.1597L14.2536 15.9463C13.2936 16.5063 12.7203 16.093 12.9736 15.013L13.2936 13.6397C13.347 13.3863 13.2536 13.013 13.067 12.8263L11.9603 11.7197C11.307 11.0663 11.5203 10.413 12.427 10.253L13.8536 10.013C14.0936 9.97301 14.3736 9.75966 14.4803 9.54633L15.267 7.97301C15.6536 7.11967 16.347 7.11967 16.7736 7.97301Z"
+                                        fill="#EA3C12" />
+                                </svg>
+                            </div>
+                            <h3 class="advantages-item__title">
+                                PREMIUM QUALITY
+                            </h3>
+                            <p class="advantages-item__text">
+                                <span>
+                                    Experience
+                                </span>
+                                our premium quality car rental services
+                            </p>
+                            <a class="advantages-item__link btn" href="#">
+                                TEST NOW
+                            </a>
+                        </div>
+                        <div class="advantages__item advantages-item">
+                            <div class="advantages-item__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4"
+                                        d="M10.1991 27.88C10.1591 27.88 10.1058 27.9066 10.0658 27.9066C7.4791 26.6266 5.37243 24.5066 4.0791 21.92C4.0791 21.88 4.10577 21.8266 4.10577 21.7866C5.73243 22.2666 7.41244 22.6266 9.0791 22.9066C9.37244 24.5866 9.7191 26.2533 10.1991 27.88Z"
+                                        fill="#EA3C12" />
+                                    <path opacity="0.4"
+                                        d="M27.9197 21.9333C26.5997 24.5866 24.3997 26.7333 21.7197 28.0266C22.2264 26.3333 22.6531 24.6266 22.9331 22.9066C24.6131 22.6266 26.2664 22.2666 27.8931 21.7866C27.8797 21.84 27.9197 21.8933 27.9197 21.9333Z"
+                                        fill="#EA3C12" />
+                                    <path opacity="0.4"
+                                        d="M28.0264 10.2798C26.3464 9.77314 24.6531 9.35981 22.9331 9.06648C22.6531 7.34648 22.2397 5.63981 21.7197 3.97314C24.4797 5.29314 26.7064 7.51981 28.0264 10.2798Z"
+                                        fill="#EA3C12" />
+                                    <path opacity="0.4"
+                                        d="M10.2003 4.12008C9.7203 5.74674 9.37363 7.40008 9.09363 9.08008C7.37363 9.34675 5.66697 9.77341 3.97363 10.2801C5.26697 7.60008 7.41363 5.40008 10.067 4.08008C10.107 4.08008 10.1603 4.12008 10.2003 4.12008Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M20.6533 8.7865C17.56 8.43984 14.44 8.43984 11.3467 8.7865C11.68 6.95984 12.1067 5.13317 12.7067 3.37317C12.7333 3.2665 12.72 3.1865 12.7333 3.07984C13.7867 2.8265 14.8667 2.6665 16 2.6665C17.12 2.6665 18.2133 2.8265 19.2533 3.07984C19.2667 3.1865 19.2667 3.2665 19.2933 3.37317C19.8933 5.1465 20.32 6.95984 20.6533 8.7865Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M8.78699 20.6533C6.94699 20.32 5.13366 19.8933 3.37366 19.2933C3.26699 19.2667 3.18699 19.28 3.08033 19.2667C2.82699 18.2133 2.66699 17.1333 2.66699 16C2.66699 14.88 2.82699 13.7867 3.08033 12.7467C3.18699 12.7333 3.26699 12.7333 3.37366 12.7067C5.14699 12.12 6.94699 11.68 8.78699 11.3467C8.45366 14.44 8.45366 17.56 8.78699 20.6533Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M29.3329 16C29.3329 17.1333 29.1729 18.2133 28.9196 19.2667C28.8129 19.28 28.7329 19.2667 28.6262 19.2933C26.8529 19.88 25.0396 20.32 23.2129 20.6533C23.5596 17.56 23.5596 14.44 23.2129 11.3467C25.0396 11.68 26.8662 12.1067 28.6262 12.7067C28.7329 12.7333 28.8129 12.7467 28.9196 12.7467C29.1729 13.8 29.3329 14.88 29.3329 16Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M20.6533 23.2134C20.32 25.0534 19.8933 26.8667 19.2933 28.6267C19.2667 28.7334 19.2667 28.8134 19.2533 28.92C18.2133 29.1734 17.12 29.3334 16 29.3334C14.8667 29.3334 13.7867 29.1734 12.7333 28.92C12.72 28.8134 12.7333 28.7334 12.7067 28.6267C12.12 26.8534 11.68 25.0534 11.3467 23.2134C12.8933 23.3867 14.44 23.5067 16 23.5067C17.56 23.5067 19.12 23.3867 20.6533 23.2134Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M21.0181 21.0176C17.6833 21.4384 14.3173 21.4384 10.9826 21.0176C10.5618 17.6828 10.5618 14.3169 10.9826 10.9821C14.3173 10.5613 17.6833 10.5613 21.0181 10.9821C21.4388 14.3169 21.4388 17.6828 21.0181 21.0176Z"
+                                        fill="#EA3C12" />
+                                </svg>
+                            </div>
+                            <h3 class="advantages-item__title">
+                                GO ANYWHERE
+                            </h3>
+                            <p class="advantages-item__text">
+                                <span>
+                                    Discover Vietnam
+                                </span>
+                                without limitations
+                                <span>
+                                    with our car rental
+                                </span>
+                            </p>
+                            <a class="advantages-item__link btn" href="#">
+                                DICOVER NOW
+                            </a>
+                        </div>
+                        <div class="advantages__item advantages-item">
+                            <div class="advantages-item__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4"
+                                        d="M13.3203 23.9732C19.204 23.9732 23.9737 19.2035 23.9737 13.3198C23.9737 7.43616 19.204 2.6665 13.3203 2.6665C7.43665 2.6665 2.66699 7.43616 2.66699 13.3198C2.66699 19.2035 7.43665 23.9732 13.3203 23.9732Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M29.2934 21.3201C29.2934 25.7201 25.7201 29.2934 21.3201 29.2934C18.6001 29.2934 16.2134 27.9334 14.7734 25.8668C20.5868 25.2134 25.2134 20.5868 25.8668 14.7734C27.9334 16.2134 29.2934 18.6001 29.2934 21.3201Z"
+                                        fill="#EA3C12" />
+                                    <path
+                                        d="M15.267 12.9469L12.067 11.8269C11.747 11.7202 11.6803 11.6935 11.6803 11.2269C11.6803 10.8802 11.9203 10.6002 12.227 10.6002H14.227C14.6537 10.6002 15.0003 10.9869 15.0003 11.4669C15.0003 12.0135 15.4537 12.4669 16.0003 12.4669C16.547 12.4669 17.0003 12.0135 17.0003 11.4669C17.0003 9.93354 15.8137 8.68021 14.3337 8.61354V8.54687C14.3337 8.00021 13.8803 7.54688 13.3337 7.54688C12.787 7.54688 12.3337 7.98687 12.3337 8.54687V8.61354H12.2137C10.8137 8.61354 9.66699 9.78688 9.66699 11.2402C9.66699 12.5069 10.227 13.3202 11.387 13.7202L14.6003 14.8402C14.9203 14.9469 14.987 14.9735 14.987 15.4402C14.987 15.7869 14.747 16.0669 14.4403 16.0669H12.4403C12.0137 16.0669 11.667 15.6802 11.667 15.2002C11.667 14.6535 11.2137 14.2002 10.667 14.2002C10.1203 14.2002 9.66699 14.6535 9.66699 15.2002C9.66699 16.7335 10.8537 17.9869 12.3337 18.0535V18.1335C12.3337 18.6802 12.787 19.1335 13.3337 19.1335C13.8803 19.1335 14.3337 18.6802 14.3337 18.1335V18.0669H14.4537C15.8537 18.0669 17.0003 16.8935 17.0003 15.4402C17.0003 14.1735 16.427 13.3602 15.267 12.9469Z"
+                                        fill="#EA3C12" />
+                                </svg>
+                            </div>
+                            <h3 class="advantages-item__title">
+                                DAMAGE COVERED
+                            </h3>
+                            <p class="advantages-item__text">
+                                Convenient
+                                <span>
+                                    airport shuttle service
+                                </span>
+                                for seamless car rental
+                            </p>
+                            <a class="advantages-item__link btn" href="#">
+                                CALL NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__about about">
+                <div class="container">
+                    <div class="about__top">
+                        <h2 class="about__top-title title">
+                            Why choose
+                            <span>
+                                us
+                            </span>
+                        </h2>
+                        <p class="about__top-text">
+                            Our Commitment to Providing Exceptional Services
+                        </p>
+                    </div>
+                    <div class="about__img">
+                        <img class="about__img-image" src="images/about-img.jpg" alt="img">
+                    </div>
+                    <div class="about__bottom about-bottom">
+                        <div class="about-bottom__box">
+                            <p class="about-bottom__box-text">
+                                Welcome to the world of unforgettable journeys across Vietnam
+                                <span>
+                                    with our car rental
+                                    service!
+                                </span>
+                            </p>
+                            <p class="about-bottom__box-text">
+                                Explore the beauty of this amazing country in a convenient and comfortable car. Our cars
+                                provide independence and the freedom to move, allowing you to savor every moment of your
+                                journey. Whether you're planning to visit the coastline along Ha Long Bay, the stunning
+                                rice terraces of Sapa.
+                            </p>
+                        </div>
+                        <div class="about-bottom__wrapper">
+                            <p class="about-bottom__text">
+                                Feel confident on Vietnam's roads with our reliable vehicles and professional services. Our
+                                goal is to make your journey comfortable and worry-free by providing you with a car that
+                                suits your needs.
+                                Don't miss the opportunity to fully immerse yourself in Vietnamese culture and nature by
+                                driving your own car. Forget about much more limited transportation options - with us, you
+                                decide where to go and how long to stay.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__start start">
+                <div class="container">
+                    <div class="start__inner">
+                        <div class="start__box start-box">
+                            <h2 class="start-box__title">
+                                Start your car rental adventure today!
+                            </h2>
+                            <p class="start-box__text">
+                                Ready to embark on an unforgettable journey through the captivating landscapes of
+                                Vietnam? Let us make your car rental experience seamless and enjoyable.
+                            </p>
+                        </div>
+                        <form class="start__form start-form" action="#">
+                            <div class="start-form__wrapper">
+                                <div class="start-form__box">
+                                    <label class="start-form__box-label" for="">
+                                        Name
+                                    </label>
+                                    <input class="start-form__box-input" type="text" placeholder="Enter your name">
+                                </div>
+                                <div class="start-form__box">
+                                    <label class="start-form__box-label" for="">
+                                        E-mail
+                                    </label>
+                                    <input class="start-form__box-input" type="email"
+                                        placeholder="Konstantin.konstani">
+                                </div>
+                            </div>
+                            <div class="start-form__box">
+                                <label class="start-form__box-label" for="">
+                                    Comment
+                                </label>
+                                <input class="start-form__box-input" type="text" placeholder="Enter your comment">
+                            </div>
+                            <div class="start-form__bottom">
+                                <label class="start-form__bottom-checkbox container">
+                                    Apply corporate rate & have a negoriated rate
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <button class="start-form__bottom-button btn" type="submit">
+                                    START NOW
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a class="footer__box-logo logo" href="#">
+                            <img class="logo__img" src="images/logo.png" alt="logo">
+                        </a>
+                        <p class="footer__box-text">
+                            <span>
+                                VINRENT
+                            </span>
+                            - best service rent a car of Vietnam
+                        </p>
+                    </div>
+                    <div class="footer__wrapper">
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Navigation
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Rent terms
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Contacts
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Cars
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Vans & Trucks
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Four wheel
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Electric
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Prestige
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Sports
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Diesel
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        SUVs
+                                    </a>
+                                </li>
+                                <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">
+                                        Convertible
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__menu footer-menu">
+                            <h3 class="footer-menu__title">
+                                Follow us
+                            </h3>
+                            <ul class="footer-menu__socials-list socials-list">
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.04 0H0.96C0.429 0 0 0.429 0 0.96V23.04C0 23.571 0.429 24 0.96 24H23.04C23.571 24 24 23.571 24 23.04V0.96C24 0.429 23.571 0 23.04 0ZM18.459 8.691C18.468 8.832 18.468 8.979 18.468 9.123C18.468 13.527 15.114 18.6 8.985 18.6C7.095 18.6 5.343 18.051 3.867 17.106C4.137 17.136 4.395 17.148 4.671 17.148C6.231 17.148 7.665 16.62 8.808 15.726C7.344 15.696 6.114 14.736 5.694 13.416C6.207 13.491 6.669 13.491 7.197 13.356C6.44318 13.2029 5.76562 12.7934 5.27945 12.1973C4.79327 11.6012 4.52846 10.8552 4.53 10.086V10.044C4.971 10.293 5.49 10.446 6.033 10.467C5.57653 10.1628 5.20217 9.75063 4.94313 9.26709C4.68409 8.78355 4.54837 8.24356 4.548 7.695C4.548 7.074 4.71 6.507 5.001 6.015C5.83771 7.04501 6.88179 7.88743 8.06539 8.4875C9.249 9.08757 10.5456 9.43186 11.871 9.498C11.4 7.233 13.092 5.4 15.126 5.4C16.086 5.4 16.95 5.802 17.559 6.45C18.312 6.309 19.032 6.027 19.674 5.649C19.425 6.42 18.903 7.071 18.21 7.482C18.882 7.41 19.53 7.224 20.13 6.963C19.677 7.629 19.11 8.22 18.459 8.691Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.04 0H0.96C0.429 0 0 0.429 0 0.96V23.04C0 23.571 0.429 24 0.96 24H23.04C23.571 24 24 23.571 24 23.04V0.96C24 0.429 23.571 0 23.04 0ZM20.268 7.005H18.351C16.848 7.005 16.557 7.719 16.557 8.769V11.082H20.145L19.677 14.703H16.557V24H12.816V14.706H9.687V11.082H12.816V8.412C12.816 5.313 14.709 3.624 17.475 3.624C18.801 3.624 19.938 3.723 20.271 3.768V7.005H20.268Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__item-link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9968 7.9983C9.79333 7.9983 7.99515 9.79651 7.99515 12C7.99515 14.2035 9.79333 16.0017 11.9968 16.0017C14.2002 16.0017 15.9984 14.2035 15.9984 12C15.9984 9.79651 14.2002 7.9983 11.9968 7.9983ZM23.9987 12C23.9987 10.3429 24.0137 8.70077 23.9206 7.04665C23.8275 5.12536 23.3893 3.4202 21.9843 2.01525C20.5764 0.607302 18.8743 0.172008 16.953 0.0789456C15.2959 -0.0141173 13.6539 0.000892936 11.9998 0.000892936C10.3427 0.000892936 8.70061 -0.0141173 7.04652 0.0789456C5.12526 0.172008 3.42014 0.610305 2.01522 2.01525C0.607291 3.42321 0.172005 5.12536 0.0789442 7.04665C-0.014117 8.70377 0.000892919 10.3459 0.000892919 12C0.000892919 13.6541 -0.014117 15.2992 0.0789442 16.9533C0.172005 18.8746 0.610293 20.5798 2.01522 21.9847C3.42314 23.3927 5.12526 23.828 7.04652 23.9211C8.70361 24.0141 10.3457 23.9991 11.9998 23.9991C13.6569 23.9991 15.2989 24.0141 16.953 23.9211C18.8743 23.828 20.5794 23.3897 21.9843 21.9847C23.3923 20.5768 23.8275 18.8746 23.9206 16.9533C24.0167 15.2992 23.9987 13.6571 23.9987 12ZM11.9968 18.1572C8.58954 18.1572 5.83973 15.4073 5.83973 12C5.83973 8.5927 8.58954 5.84284 11.9968 5.84284C15.404 5.84284 18.1538 8.5927 18.1538 12C18.1538 15.4073 15.404 18.1572 11.9968 18.1572ZM18.406 7.02864C17.6105 7.02864 16.968 6.38621 16.968 5.59067C16.968 4.79513 17.6105 4.1527 18.406 4.1527C19.2015 4.1527 19.8439 4.79513 19.8439 5.59067C19.8442 5.77957 19.8071 5.96667 19.735 6.14124C19.6628 6.31581 19.5569 6.47442 19.4233 6.608C19.2897 6.74157 19.1311 6.84748 18.9565 6.91967C18.782 6.99185 18.5949 7.02888 18.406 7.02864Z"
+                                                fill="#828282" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="footer-menu__link btn" href="#">
+                                WRITE US
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__bottom-text">
+                        2023 © All rights reserved
+                    </p>
+                    <a class="footer__bottom-link" href="#">
+                        Cookies
+                    </a>
+                    <a class="footer__bottom-link" href="#">
+                        Privacy Policy
+                    </a>
+                    <p class="footer__bottom-text">
+                        thefrest.design
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

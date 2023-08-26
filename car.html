@@ -19,10 +19,17 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                <div class="header__burger burger">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="10" y="14" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="10" y="18" width="10" height="2" fill="#FEFEFE" />
+                        <rect x="1.5" y="1.5" width="27" height="27" stroke="#EA3C12" stroke-width="3" />
+                    </svg>
+                </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
@@ -87,6 +94,13 @@
     <div class="wrapper">
         <main class="main">
             <section class="main__heading heading car-heading" style="background-image: url(images/heading-bg.png);">
+                <style>
+                    @media(max-width: 550px) {
+                        .heading {
+                            background-image: url(images/heading-bg-mobile-2.png) !important;
+                        }
+                    }
+                </style>
                 <div class="container">
                     <div class="heading__inner">
                         <div class="heading__body heading-body">
@@ -137,9 +151,13 @@
                         </div>
                         <div class="heading__img">
                             <img class="heading__img-image" src="images/heading-img-2.png" alt="img">
-                        </div>
+                        </div> 
                     </div>
-                    <form class="heading__rent rent" action="#">
+                </div>
+            </section>
+            <section class="main__rent-section rent-section car-rent-section">
+                <div class="container">
+                    <form class="rent-section__rent rent" action="#">
                         <div class="rent__radios rent-tubs">
                             <label class="rent-tubs__checkbox rent-tubs__checkbox--active container">
                                 Car
@@ -298,6 +316,9 @@
                             </p>
                         </div>
                     </div>
+                    <a class="about__link btn" href="#">
+                        book now
+                    </a>
                 </div>
             </section>
             <section class="main__offer offer">
@@ -494,7 +515,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
         <footer class="footer">
             <div class="container">

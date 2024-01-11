@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <link rel="stylesheet" href="css/style.min.css">
+
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <!--  -->
 </head>
 
 <body>
@@ -132,7 +136,8 @@
                                 <a class="heading-body__bottom-link btn" href="#">
                                     CHECK AVIABILITY
                                 </a>
-                                <a class="heading-body__bottom-info" href="#">
+                                <!--  -->
+                                <button class="heading-body__bottom-info" type="button">
                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_37_3211)">
@@ -146,12 +151,13 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                </a>
+                                </button>
+                                <!--  -->
                             </div>
                         </div>
                         <div class="heading__img">
                             <img class="heading__img-image" src="images/heading-img-2.png" alt="img">
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </section>
@@ -256,21 +262,28 @@
                         <h2 class="about__top-title title">
                             BMW 8 series Convertible
                         </h2>
-                        <a class="about__top-link btn" href="#">
-                            book now
-                        </a>
+                         <!-- /// -->
+                        <div class="about__top-link btn">
+                            fleet photos
+                        </div>
+                         <!-- /// -->
                     </div>
                     <div class="about__swiper about-swiper swiper">
                         <div class="swiper-wrapper">
+                            <!--  -->
                             <div class="about-swiper__slide about-slide swiper-slide">
-                                <img class="about-slide__img" src="images/about-img-1.jpg" alt="img">
+                                <img class="about-slide__img" src="images/offers-img-4.jpg" alt="img">
+                                <img class="about-slide__img" src="images/offers-img-4.jpg" alt="img">
                             </div>
                             <div class="about-swiper__slide about-slide swiper-slide">
-                                <img class="about-slide__img" src="images/about-img-1.jpg" alt="img">
+                                <img class="about-slide__img" src="images/reserve-block-img.jpg" alt="img">
+                                <img class="about-slide__img" src="images/reserve-block-img.jpg" alt="img">
                             </div>
                             <div class="about-swiper__slide about-slide swiper-slide">
-                                <img class="about-slide__img" src="images/about-img-1.jpg" alt="img">
+                                <img class="about-slide__img" src="images/img.jpg" alt="img">
+                                <img class="about-slide__img" src="images/img.jpg" alt="img">
                             </div>
+                            <!--  -->
                         </div>
                         <div class="about-swiper__pagination swiper-pagination"></div>
                         <div class="about-swiper__prev swiper-btn-prev">
@@ -286,6 +299,58 @@
                             </svg>
                         </div>
                     </div>
+                    <!-- /// -->
+                    <div class="car-about__wrapper">
+                        <button class="car-about__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </button>
+                        <div class="container">
+                            <div class="about__swiper about-swiper about-swiper--gallery swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="about-swiper__slide about-slide swiper-slide">
+                                        <a href="#">
+                                            <img class="about-slide__img" src="images/about-img-1.jpg" alt="img">
+                                            <div class="about-slide__btn btn">
+                                                book now
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="about-swiper__slide about-slide swiper-slide">
+                                        <a href="#">
+                                            <img class="about-slide__img" src="images/about-img-1.jpg" alt="img">
+                                            <div class="about-slide__btn btn">
+                                                book now
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="about-swiper__slide about-slide swiper-slide">
+                                        <a href="#">
+                                            <img class="about-slide__img" src="images/about-img-1.jpg" alt="img">
+                                            <div class="about-slide__btn btn">
+                                                book now
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="about-swiper__pagination about-swiper--gallery__pagination swiper-pagination"></div>
+                                <div class="about-swiper--gallery__prev swiper-btn-prev">
+                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 8L0 0L16 0L8 8Z" fill="#EA3C12" />
+                                    </svg>
+                                </div>
+                                <div class="about-swiper--gallery__next swiper-btn-next">
+                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 8L0 0L16 0L8 8Z" fill="#EA3C12" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /// -->
                     <div class="about__bottom about-bottom">
                         <div class="about-bottom__box">
                             <p class="about-bottom__box-text">
@@ -515,6 +580,162 @@
                     </div>
                 </div>
             </section>
+            <!--  -->
+            <section class="main__rental-info rental-info">
+                <div class="container">
+                    <div class="rental-info__inner">
+                        <div class="rental-info__tubs rental-info-tubs">
+                            <button class="rental-info-tubs__button rental-info-tubs__button--active" type="button"
+                                id="0">
+                                Daily Rental
+                            </button>
+                            <button class="rental-info-tubs__button" type="button" id="1">
+                                Montly Rental
+                            </button>
+                            <button class="rental-info-tubs__button" type="button" id="2">
+                                Additional Services
+                            </button>
+                        </div>
+                        <div class="rental-info__wrapper">
+                            <div class="rental-info__table rental-info-table rental-info-table--active" id="0">
+                                <table>
+                                    <tr>
+                                        <th>Period</th>
+                                        <th>Amoutn per day</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1 day</td>
+                                        <td>550,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>up to 3 days</td>
+                                        <td>525,000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="rental-info__table rental-info-table" id="1">
+                                <table>
+                                    <tr>
+                                        <th>Period</th>
+                                        <th>Total amount</th>
+                                        <th>Amount per day</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1 month</td>
+                                        <td>12,000,000</td>
+                                        <td>400,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 months</td>
+                                        <td>11,900,000</td>
+                                        <td>396,667</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="rental-info__table rental-info-table" id="2">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>One-time fixed</th>
+                                        <th>One-teme %</th>
+                                        <th>Per day fixed</th>
+                                        <th>Per day %</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional driver</td>
+                                        <td>50,000</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPS</td>
+                                        <td>n/a</td>
+                                        <td>5%</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional driver</td>
+                                        <td>50,000</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPS</td>
+                                        <td>n/a</td>
+                                        <td>5%</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional driver</td>
+                                        <td>50,000</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPS</td>
+                                        <td>n/a</td>
+                                        <td>5%</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional driver</td>
+                                        <td>50,000</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPS</td>
+                                        <td>n/a</td>
+                                        <td>5%</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Additional driver</td>
+                                        <td>50,000</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPS</td>
+                                        <td>n/a</td>
+                                        <td>5%</td>
+                                        <td>n/a</td>
+                                        <td>n/a</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="rental-info__bottom">
+                            <h3 class="rental-info__bottom-title">
+                                Rental <span>Requirements</span>:
+                            </h3>
+                            <p class="rental-info__bottom-text">
+                                15 000 000 of deposit amount by cash, assets or blocking on Visa/Mastercad <br>
+                                Passport and driving license <br>
+                                Signed agreement <br>
+                            </p>
+                        </div>
+                        <button class="rental-info__close" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <path
+                                    d="M17.4562 16.1502L10.2765 8.97056L17.4562 1.79089C17.6293 1.61778 17.7266 1.383 17.7266 1.13819C17.7266 0.893384 17.6293 0.658601 17.4562 0.485495C17.2831 0.312389 17.0483 0.215138 16.8035 0.215138C16.5587 0.215138 16.3239 0.312389 16.1508 0.485495L8.97113 7.66517L1.79146 0.485495C1.61835 0.312389 1.38357 0.215138 1.13876 0.215138C0.893953 0.215138 0.65917 0.312389 0.486064 0.485495C0.398015 0.567102 0.328482 0.666634 0.282151 0.777385C0.23582 0.888135 0.213766 1.00753 0.217478 1.12752C0.221189 1.24752 0.250579 1.36532 0.303665 1.473C0.356752 1.58067 0.432302 1.67572 0.525225 1.75173L7.7049 8.9314L0.486064 16.1502C0.312958 16.3233 0.215707 16.5581 0.215707 16.8029C0.215707 17.0477 0.312958 17.2825 0.486064 17.4556C0.65917 17.6287 0.893952 17.726 1.13876 17.726C1.38357 17.726 1.61835 17.6287 1.79146 17.4556L8.97113 10.276L16.1508 17.4556C16.3239 17.6287 16.5587 17.726 16.8035 17.726C17.0483 17.726 17.2831 17.6287 17.4562 17.4556C17.6293 17.2825 17.7266 17.0477 17.7266 16.8029C17.7266 16.5581 17.6293 16.3233 17.4562 16.1502Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
         </main>
         <footer class="footer">
             <div class="container">
@@ -668,6 +889,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!--  -->
     <script src="js/main.min.js"></script>
 </body>
 

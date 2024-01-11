@@ -127,7 +127,7 @@
                                 #4201
                             </span>
                         </h2>
-                    </div> 
+                    </div>
                     <div class="reserve__block reserve-block">
                         <div class="reserve-block__inner">
                             <div class="reserve-block__img">
@@ -168,18 +168,46 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="reserve-info-form__wrapper">
-                                        <p class="reserve-info-form__text">
-                                            Returning customer
-                                        </p>
-                                        <div class="reserve-info-form__box">
-                                            <input class="reserve-info-form__box-input" type="text"
-                                                placeholder="Your PIN code">
-                                            <button class="reserve-info-form__box-btn btn" type="button">
-                                                Apply
-                                            </button>
-                                        </div>
+                                    <div class="reserve-info-form__inner">
+                                        <label class="reserve-info-form__checkbox container">
+                                            Дополнительный водитель 50$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Более 100 км/день 77$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            GPS навигатор 66$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Выезд за город 55$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Наш водитель 42$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Дополнительная страхова 32$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="reserve-info-form__checkbox container">
+                                            Детское сиденье 22$
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
                                     </div>
+                                    <button class="reserve-info-form__box-btn reserve-info-form__box-btn--last btn" type="button">
+                                        Apply
+                                    </button>
                                 </form>
                                 <div class="reserve-info__bottom reserve-info-bottom">
                                     <div class="reserve-info-bottom__box">
@@ -195,7 +223,7 @@
                                             Net price
                                         </p>
                                         <p class="reserve-info-bottom__box-subtext">
-                                            $ 210.00
+                                            $ 21<span>0000</span>
                                         </p>
                                     </div>
                                     <div class="reserve-info-bottom__box">
@@ -203,7 +231,7 @@
                                             Tax
                                         </p>
                                         <p class="reserve-info-bottom__box-subtext">
-                                            $ 0.00
+                                            $ 0<span>00</span>
                                         </p>
                                     </div>
                                     <div class="reserve-info-bottom__box">
@@ -211,7 +239,7 @@
                                             Total price
                                         </p>
                                         <p class="reserve-info-bottom__box-subtext">
-                                            $ 210.00
+                                            $ 2<span>000000000</span>
                                         </p>
                                     </div>
                                 </div>
@@ -244,7 +272,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="reserve__details details">
                         <div class="details__top">
                             <h2 class="details__top-title title">
@@ -308,7 +336,7 @@
                                 Save
                             </button>
                         </form>
-                    </div> 
+                    </div>
                 </div>
             </section>
             <section class="main__payment payment">
@@ -319,127 +347,159 @@
                         </span>
                         your booking
                     </h2>
-                    <div class="payment__info">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM11 15H9V9H11V15ZM11 7H9V5H11V7Z"
-                                fill="#EA3C12" />
-                        </svg>
-                        <p class="payment__info-text">
-                            We ned your credit card details to guarantee your booking. You will not be charged now. Your
-                            booking will be paid at the station the day of the vehicle pick up.
-                            <a href="#">
-                                more info
-                            </a>
-                        </p>
+                    <div class="payment__tubs">
+                        <button class="payment__tubs-button payment__tubs-button--active" type="button" id="0">
+                            Payment by Credit card
+                        </button>
+                        <button class="payment__tubs-button" type="button" id="1">
+                            Payment by cash
+                        </button>
                     </div>
-                    <form class="payment__form payment-form" action="#">
-                        <div class="payment-form__inner">
-                            <div class="payment-form__payments payments">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    <div class="payment__inner">
+                        <div class="payment__wrapper payment__wrapper--active" id="0">
+                            <div class="payment__info">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M18.224 16.524L11.94 31.516H7.84L4.748 19.55C4.56 18.814 4.398 18.544 3.826 18.234C2.894 17.728 1.354 17.254 0 16.958L0.092 16.524H6.692C7.1233 16.5236 7.54054 16.6774 7.86842 16.9576C8.19629 17.2378 8.41321 17.626 8.48 18.052L10.114 26.728L14.15 16.524H18.224ZM34.29 26.622C34.306 22.664 28.818 22.446 28.856 20.678C28.868 20.14 29.38 19.568 30.5 19.422C31.8126 19.2974 33.1345 19.5296 34.326 20.094L35.006 16.914C33.8459 16.4779 32.6173 16.2524 31.378 16.248C27.544 16.248 24.846 18.288 24.822 21.206C24.798 23.364 26.748 24.566 28.218 25.286C29.73 26.02 30.238 26.492 30.23 27.148C30.22 28.156 29.026 28.598 27.91 28.616C25.96 28.646 24.83 28.09 23.926 27.67L23.224 30.954C24.13 31.37 25.802 31.734 27.536 31.75C31.61 31.75 34.276 29.738 34.29 26.622ZM44.412 31.516H48L44.87 16.524H41.558C41.2041 16.5208 40.8574 16.6239 40.5629 16.82C40.2683 17.0162 40.0394 17.2963 39.906 17.624L34.088 31.516H38.16L38.97 29.276H43.946L44.412 31.516ZM40.086 26.204L42.126 20.574L43.302 26.204H40.086ZM23.766 16.524L20.56 31.516H16.68L19.89 16.524H23.766Z"
-                                        fill="#1A1F71" />
+                                        d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM11 15H9V9H11V15ZM11 7H9V5H11V7Z"
+                                        fill="#EA3C12" />
                                 </svg>
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14 38C21.732 38 28 31.732 28 24C28 16.268 21.732 10 14 10C6.26801 10 0 16.268 0 24C0 31.732 6.26801 38 14 38Z"
-                                        fill="#EA001B" />
-                                    <path
-                                        d="M34 38C41.732 38 48 31.732 48 24C48 16.268 41.732 10 34 10C26.268 10 20 16.268 20 24C20 31.732 26.268 38 34 38Z"
-                                        fill="#FFA200" fill-opacity="0.8" />
-                                </svg>
+                                <p class="payment__info-text">
+                                    We ned your credit card details to guarantee your booking. You will not be charged
+                                    now. Your
+                                    booking will be paid at the station the day of the vehicle pick up.
+                                    <a href="#">
+                                        more info
+                                    </a>
+                                </p>
                             </div>
-                            <h3 class="payment-form__title">
-                                Credit card
-                            </h3>
-                            <p class="payment-form__text">
-                                The payment card
-                            </p>
-                            <div class="payment-form__wrapper">
-                                <div class="payment-form__box payment-form-box">
-                                    <label class="payment-form-box__label" for="">
-                                        Card number
-                                    </label>
-                                    <input class="payment-form-box__input payment-form-box__input--number" type="text" placeholder="XXXX XXXX XXXX XXXX" maxlength="19">
+                            <form class="payment__form payment-form" action="#">
+                                <div class="payment-form__inner">
+                                    <div class="payment-form__payments payments">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.224 16.524L11.94 31.516H7.84L4.748 19.55C4.56 18.814 4.398 18.544 3.826 18.234C2.894 17.728 1.354 17.254 0 16.958L0.092 16.524H6.692C7.1233 16.5236 7.54054 16.6774 7.86842 16.9576C8.19629 17.2378 8.41321 17.626 8.48 18.052L10.114 26.728L14.15 16.524H18.224ZM34.29 26.622C34.306 22.664 28.818 22.446 28.856 20.678C28.868 20.14 29.38 19.568 30.5 19.422C31.8126 19.2974 33.1345 19.5296 34.326 20.094L35.006 16.914C33.8459 16.4779 32.6173 16.2524 31.378 16.248C27.544 16.248 24.846 18.288 24.822 21.206C24.798 23.364 26.748 24.566 28.218 25.286C29.73 26.02 30.238 26.492 30.23 27.148C30.22 28.156 29.026 28.598 27.91 28.616C25.96 28.646 24.83 28.09 23.926 27.67L23.224 30.954C24.13 31.37 25.802 31.734 27.536 31.75C31.61 31.75 34.276 29.738 34.29 26.622ZM44.412 31.516H48L44.87 16.524H41.558C41.2041 16.5208 40.8574 16.6239 40.5629 16.82C40.2683 17.0162 40.0394 17.2963 39.906 17.624L34.088 31.516H38.16L38.97 29.276H43.946L44.412 31.516ZM40.086 26.204L42.126 20.574L43.302 26.204H40.086ZM23.766 16.524L20.56 31.516H16.68L19.89 16.524H23.766Z"
+                                                fill="#1A1F71" />
+                                        </svg>
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 38C21.732 38 28 31.732 28 24C28 16.268 21.732 10 14 10C6.26801 10 0 16.268 0 24C0 31.732 6.26801 38 14 38Z"
+                                                fill="#EA001B" />
+                                            <path
+                                                d="M34 38C41.732 38 48 31.732 48 24C48 16.268 41.732 10 34 10C26.268 10 20 16.268 20 24C20 31.732 26.268 38 34 38Z"
+                                                fill="#FFA200" fill-opacity="0.8" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="payment-form__title">
+                                        Credit card
+                                    </h3>
+                                    <p class="payment-form__text">
+                                        The payment card
+                                    </p>
+                                    <div class="payment-form__wrapper">
+                                        <div class="payment-form__box payment-form-box">
+                                            <label class="payment-form-box__label" for="">
+                                                Card number
+                                            </label>
+                                            <input class="payment-form-box__input payment-form-box__input--number"
+                                                type="text" placeholder="XXXX XXXX XXXX XXXX" maxlength="19">
+                                        </div>
+                                        <div class="payment-form__box payment-form-box">
+                                            <label class="payment-form-box__label" for="">
+                                                Expiry date
+                                            </label>
+                                            <input class="payment-form-box__input payment-form-box__input--date"
+                                                type="text" placeholder="MM | YY" maxlength="7">
+                                        </div>
+                                        <div class="payment-form__box payment-form-box">
+                                            <label class="payment-form-box__label" for="">
+                                                CVV
+                                            </label>
+                                            <input class="payment-form-box__input payment-form-box__input--cvv"
+                                                type="text" placeholder="XXX" maxlength="3">
+                                        </div>
+                                    </div>
+                                    <p class="payment-form__text">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_44_1756)">
+                                                <path
+                                                    d="M6.66667 5H33.3333C33.7754 5 34.1993 5.17559 34.5118 5.48816C34.8244 5.80072 35 6.22464 35 6.66667V33.3333C35 33.7754 34.8244 34.1993 34.5118 34.5118C34.1993 34.8244 33.7754 35 33.3333 35H6.66667C6.22464 35 5.80072 34.8244 5.48816 34.5118C5.17559 34.1993 5 33.7754 5 33.3333V6.66667C5 6.22464 5.17559 5.80072 5.48816 5.48816C5.80072 5.17559 6.22464 5 6.66667 5ZM18.3333 21.32V26.6667H21.6667V21.32C22.544 20.9371 23.2627 20.2638 23.702 19.4133C24.1413 18.5628 24.2744 17.587 24.0788 16.6499C23.8832 15.7128 23.3709 14.8717 22.6281 14.2679C21.8853 13.6641 20.9573 13.3345 20 13.3345C19.0427 13.3345 18.1147 13.6641 17.3719 14.2679C16.6291 14.8717 16.1168 15.7128 15.9212 16.6499C15.7256 17.587 15.8587 18.5628 16.298 19.4133C16.7373 20.2638 17.456 20.9371 18.3333 21.32Z"
+                                                    fill="#EA3C12" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_44_1756">
+                                                    <rect width="40" height="40" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>
+                                            For your security, verification of your identity may be requested. Contact
+                                            your bank
+                                            for more info.
+                                        </span>
+                                    </p>
+                                    <div class="payment-form__payments payments">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.224 16.524L11.94 31.516H7.84L4.748 19.55C4.56 18.814 4.398 18.544 3.826 18.234C2.894 17.728 1.354 17.254 0 16.958L0.092 16.524H6.692C7.1233 16.5236 7.54054 16.6774 7.86842 16.9576C8.19629 17.2378 8.41321 17.626 8.48 18.052L10.114 26.728L14.15 16.524H18.224ZM34.29 26.622C34.306 22.664 28.818 22.446 28.856 20.678C28.868 20.14 29.38 19.568 30.5 19.422C31.8126 19.2974 33.1345 19.5296 34.326 20.094L35.006 16.914C33.8459 16.4779 32.6173 16.2524 31.378 16.248C27.544 16.248 24.846 18.288 24.822 21.206C24.798 23.364 26.748 24.566 28.218 25.286C29.73 26.02 30.238 26.492 30.23 27.148C30.22 28.156 29.026 28.598 27.91 28.616C25.96 28.646 24.83 28.09 23.926 27.67L23.224 30.954C24.13 31.37 25.802 31.734 27.536 31.75C31.61 31.75 34.276 29.738 34.29 26.622ZM44.412 31.516H48L44.87 16.524H41.558C41.2041 16.5208 40.8574 16.6239 40.5629 16.82C40.2683 17.0162 40.0394 17.2963 39.906 17.624L34.088 31.516H38.16L38.97 29.276H43.946L44.412 31.516ZM40.086 26.204L42.126 20.574L43.302 26.204H40.086ZM23.766 16.524L20.56 31.516H16.68L19.89 16.524H23.766Z"
+                                                fill="#1A1F71" />
+                                        </svg>
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 38C21.732 38 28 31.732 28 24C28 16.268 21.732 10 14 10C6.26801 10 0 16.268 0 24C0 31.732 6.26801 38 14 38Z"
+                                                fill="#EA001B" />
+                                            <path
+                                                d="M34 38C41.732 38 48 31.732 48 24C48 16.268 41.732 10 34 10C26.268 10 20 16.268 20 24C20 31.732 26.268 38 34 38Z"
+                                                fill="#FFA200" fill-opacity="0.8" />
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="payment-form__box payment-form-box">
-                                    <label class="payment-form-box__label" for="">
-                                        Expiry date
-                                    </label>
-                                    <input class="payment-form-box__input payment-form-box__input--date" type="text" placeholder="MM | YY" maxlength="7">
+                                <div class="payment-form__bottom payment-form-bottom">
+                                    <div class="payment-form-bottom__wrapper">
+                                        <label class="payment-form-bottom__checkbox container">
+                                            I consent to rceive news and special offers
+                                            <a href="#">
+                                                from Vinrent
+                                            </a>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="payment-form-bottom__checkbox container">
+                                            I wish to receive news and special offers from Vinrent business partners/
+                                            For a full
+                                            list of partners who may send you emails, please consult our
+                                            <a href="#">
+                                                Privacy Policy
+                                            </a>
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <button class="payment-form-bottom__button btn" type="submit">
+                                        pay at desk
+                                    </button>
                                 </div>
-                                <div class="payment-form__box payment-form-box">
-                                    <label class="payment-form-box__label" for="">
-                                        CVV
-                                    </label>
-                                    <input class="payment-form-box__input payment-form-box__input--cvv" type="text" placeholder="XXX" maxlength="3">
-                                </div>
-                            </div>
-                            <p class="payment-form__text">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_44_1756)">
-                                        <path
-                                            d="M6.66667 5H33.3333C33.7754 5 34.1993 5.17559 34.5118 5.48816C34.8244 5.80072 35 6.22464 35 6.66667V33.3333C35 33.7754 34.8244 34.1993 34.5118 34.5118C34.1993 34.8244 33.7754 35 33.3333 35H6.66667C6.22464 35 5.80072 34.8244 5.48816 34.5118C5.17559 34.1993 5 33.7754 5 33.3333V6.66667C5 6.22464 5.17559 5.80072 5.48816 5.48816C5.80072 5.17559 6.22464 5 6.66667 5ZM18.3333 21.32V26.6667H21.6667V21.32C22.544 20.9371 23.2627 20.2638 23.702 19.4133C24.1413 18.5628 24.2744 17.587 24.0788 16.6499C23.8832 15.7128 23.3709 14.8717 22.6281 14.2679C21.8853 13.6641 20.9573 13.3345 20 13.3345C19.0427 13.3345 18.1147 13.6641 17.3719 14.2679C16.6291 14.8717 16.1168 15.7128 15.9212 16.6499C15.7256 17.587 15.8587 18.5628 16.298 19.4133C16.7373 20.2638 17.456 20.9371 18.3333 21.32Z"
-                                            fill="#EA3C12" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_44_1756">
-                                            <rect width="40" height="40" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <span>
-                                    For your security, verification of your identity may be requested. Contact your bank
-                                    for more info.
-                                </span>
-                            </p>
-                            <div class="payment-form__payments payments">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18.224 16.524L11.94 31.516H7.84L4.748 19.55C4.56 18.814 4.398 18.544 3.826 18.234C2.894 17.728 1.354 17.254 0 16.958L0.092 16.524H6.692C7.1233 16.5236 7.54054 16.6774 7.86842 16.9576C8.19629 17.2378 8.41321 17.626 8.48 18.052L10.114 26.728L14.15 16.524H18.224ZM34.29 26.622C34.306 22.664 28.818 22.446 28.856 20.678C28.868 20.14 29.38 19.568 30.5 19.422C31.8126 19.2974 33.1345 19.5296 34.326 20.094L35.006 16.914C33.8459 16.4779 32.6173 16.2524 31.378 16.248C27.544 16.248 24.846 18.288 24.822 21.206C24.798 23.364 26.748 24.566 28.218 25.286C29.73 26.02 30.238 26.492 30.23 27.148C30.22 28.156 29.026 28.598 27.91 28.616C25.96 28.646 24.83 28.09 23.926 27.67L23.224 30.954C24.13 31.37 25.802 31.734 27.536 31.75C31.61 31.75 34.276 29.738 34.29 26.622ZM44.412 31.516H48L44.87 16.524H41.558C41.2041 16.5208 40.8574 16.6239 40.5629 16.82C40.2683 17.0162 40.0394 17.2963 39.906 17.624L34.088 31.516H38.16L38.97 29.276H43.946L44.412 31.516ZM40.086 26.204L42.126 20.574L43.302 26.204H40.086ZM23.766 16.524L20.56 31.516H16.68L19.89 16.524H23.766Z"
-                                        fill="#1A1F71" />
-                                </svg>
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14 38C21.732 38 28 31.732 28 24C28 16.268 21.732 10 14 10C6.26801 10 0 16.268 0 24C0 31.732 6.26801 38 14 38Z"
-                                        fill="#EA001B" />
-                                    <path
-                                        d="M34 38C41.732 38 48 31.732 48 24C48 16.268 41.732 10 34 10C26.268 10 20 16.268 20 24C20 31.732 26.268 38 34 38Z"
-                                        fill="#FFA200" fill-opacity="0.8" />
-                                </svg>
+                            </form>
+                        </div>
+                        <div class="payment__wrapper" id="1">
+                            <div class="payment__info payment__info--cash">
+                                <p class="payment__info-text">
+                                    You can pay in our office or at the meeting in cash.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora deleniti
+                                    consectetur amet. Quos animi maiores natus quibusdam dolor commodi porro,
+                                    consequatur molestias veniam, iure dicta nulla eaque, tenetur voluptas?
+                                    <a href="#">
+                                        more info
+                                    </a>
+                                </p>
                             </div>
                         </div>
-                        <div class="payment-form__bottom payment-form-bottom">
-                            <div class="payment-form-bottom__wrapper">
-                                <label class="payment-form-bottom__checkbox container">
-                                    I consent to rceive news and special offers
-                                    <a href="#">
-                                        from Vinrent
-                                    </a>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="payment-form-bottom__checkbox container">
-                                    I wish to receive news and special offers from Vinrent business partners/ For a full
-                                    list of partners who may send you emails, please consult our
-                                    <a href="#">
-                                        Privacy Policy
-                                    </a>
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <button class="payment-form-bottom__button btn" type="submit">
-                                pay at desk
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                     <p class="payment__text">
                         The open road becomes your playground as the wind caresses your skin and the engine's melody
                         dances in your ears. The BMW 8 Series Convertible is not merely a car; it's an orchestra of
@@ -454,7 +514,7 @@
                         you're in control of your journey, regardless of the elements
                     </p>
                 </div>
-            </section> 
+            </section>
         </main>
         <footer class="footer">
             <div class="container">
@@ -602,7 +662,7 @@
                     </p>
                 </div>
             </div>
-        </footer> 
+        </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
